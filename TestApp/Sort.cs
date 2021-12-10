@@ -22,17 +22,18 @@ namespace TestApp
                 }
             }
             return arr;
-        } 
+        }
         #endregion
 
-        public int Partition(int[] a,int start,int end)
+        #region QuickSort
+        public int Partition(int[] a, int start, int end)
         {
             int pivot = end;
-            int i = start-1;
+            int i = start - 1;
             //int j = end;
-            for(int j=start;j<end-1;j++)
+            for (int j = start; j < end - 1; j++)
             {
-                if(a[j]<=a[pivot])
+                if (a[j] <= a[pivot])
                 {
                     i++;
                     int temp = a[i];
@@ -43,12 +44,12 @@ namespace TestApp
             int t = a[i + 1];
             a[i + 1] = a[end];
             a[end] = t;
-            return i+1;
+            return i + 1;
         }
 
-        public void QuickSort(int[] a,int p,int r)
+        public void QuickSort(int[] a, int p, int r)
         {
-            if(p<r)
+            if (p < r)
             {
                 int q;
                 q = Partition(a, p, r);
@@ -56,5 +57,8 @@ namespace TestApp
                 QuickSort(a, q + 1, r);
             }
         }
+        #endregion
+
+
     }
 }

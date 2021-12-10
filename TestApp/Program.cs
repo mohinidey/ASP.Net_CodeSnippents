@@ -48,12 +48,12 @@ namespace TestApp
             //Console.WriteLine(r); 
             #endregion
             #region Sorting
-            var num = Console.ReadLine();
-            var nums = num.Split();
-            int[] n = new int[nums.Length];
-            for (int i = 0; i < nums.Length; i++)
-                n[i] = Convert.ToInt32(nums[i]);
-            Sort obj = new Sort();
+            //var num = Console.ReadLine();
+            //var nums = num.Split();
+            //int[] n = new int[nums.Length];
+            //for (int i = 0; i < nums.Length; i++)
+            //    n[i] = Convert.ToInt32(nums[i]);
+            //Sort obj = new Sort();
             //var l = obj.BubbleSort(n);
             //obj.QuickSort(n, 0, n.Length - 1);
             //foreach (var a in n)
@@ -67,6 +67,10 @@ namespace TestApp
             //Console.WriteLine(value); 
             #endregion
             #endregion
+
+            List<int> li = new List<int> { 1, 1, 2, 2, 2, 8, 8, 8, 8, 8, 5, 5 };
+            Dictionary obj1 = new Dictionary();
+            obj1.OrderDict(li);
         }
         static string reverse(string s)
         {
