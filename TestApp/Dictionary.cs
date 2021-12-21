@@ -14,7 +14,6 @@ namespace TestApp
              n.Sort();
             foreach(var num in n)
             {
-                //int cnt = 0;
                 var rm = num % 100;
                 if (sortedNumbers.Keys.Contains(rm))
                     sortedNumbers[rm] += 1;

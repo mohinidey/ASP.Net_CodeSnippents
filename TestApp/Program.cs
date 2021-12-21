@@ -68,9 +68,14 @@ namespace TestApp
             #endregion
             #endregion
 
-            List<int> li = new List<int> { 1, 1, 2, 2, 2, 8, 8, 8, 8, 8, 5, 5 };
-            Dictionary obj1 = new Dictionary();
-            obj1.OrderDict(li);
+            #region Dict Code
+            //List<int> li = new List<int> { 1, 1, 2, 2, 2, 8, 8, 8, 8, 8, 5, 5 };
+            //Dictionary obj1 = new Dictionary();
+            //obj1.OrderDict(li); 
+            #endregion
+
+            LinqQuery obj = new LinqQuery();
+            obj.LinqExamples();
         }
         static string reverse(string s)
         {
