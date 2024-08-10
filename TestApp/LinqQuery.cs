@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections;
+using System.Collections.Concurrent;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -59,8 +60,27 @@ namespace TestApp
             {
                 Console.WriteLine(f.DeptId + " " + f.Name);
             }
-            */ 
+            */
             #endregion
+
+            //SQL Query
+            //1. to delete dupicate data from a table 
+            //
+            //WITH a as
+            //(
+            //SELECT Firstname, ROW_NUMBER() OVER(PARTITION by Firstname, empID ORDER BY Firstname)
+            //    AS duplicateRecCount FROM dbo.tblEmployee)
+            ////Now Delete Duplicate Records
+            //DELETE FROM a WHERE duplicateRecCount > 1
+
+
+            //2. Nth highest salary
+            //SELECT* FROM(
+            // SELECT emp_name, emp_salary, DENSE_RANK() OVER (ORDER BY emp_salary DESC) AS r
+            //FROM emp
+            //) AS subquery
+            //WHERE r = 3;
+
 
         }
     }

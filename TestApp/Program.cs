@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace TestApp
 {
@@ -7,6 +8,8 @@ namespace TestApp
     {
         static void Main(string[] args)
         {
+            OverridingTest obj = new OverridingChildTest();
+            obj.test(); //op - child Class, if virtual and override statements are not used then this will give base class
             string[] s = new string[100];
             List<int> v = new List<int>();
             v.Add(1);
@@ -74,8 +77,11 @@ namespace TestApp
             //obj1.OrderDict(li); 
             #endregion
 
-            LinqQuery obj = new LinqQuery();
-            obj.LinqExamples();
+            //LinqQuery obj = new LinqQuery();
+            //obj.LinqExamples();
+
+            string t = "Test Object";
+            var res1 = t.Where(c => char.IsUpper(c));
         }
         static string reverse(string s)
         {
@@ -83,5 +89,13 @@ namespace TestApp
             Array.Reverse(c);
             return new string(c);
         }
+        //static int Afunc()
+        //{
+        //    return 1;
+        //}
+        //static float Afunc() //Not possible, will return compilation error
+        //{
+        //    return 1;
+        //}
     }
 }

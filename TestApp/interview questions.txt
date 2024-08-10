@@ -1,0 +1,43 @@
+Angular - 
+how will you let know the user if any one has partially filled up some form & then trying to go to another page
+how to save token globally in angular
+child to parent . parent to child
+pass the data between different components having no relation
+
+geneics in C#
+boxing & unboxing
+new virtual keyword
+multicastv delegates => when to use
+events vs delegates
+
+Web API - 
+model binding in .net core
+middleware, custom middleware
+exception handling
+Authentication Authorization
+dependency injection
+Logger,
+API versioning
+id token vs access token
+JWT token structure
+when to avoid addtransient => storage issues
+any projects architecture
+
+monolith vs microservice architecture
+how components connect with each other in microservice
+
+WPF - refection, converter, Resources, Dependency property, attached property, Command design pattern
+
+SQL-
+show the details of the customers last purchase date along with the sum of the amount the purchased o last date
+Swap all the F genders with M and vice versa using SQL
+view vs temp table
+clustered, non clustered, covered index -use cases
+
+Saas vs Paas
+availability sets vs availability zones
+azure app service plan
+non functional requirements
+why to use service bus & kafka, kafka zookeeper
+Different types of blob storage
+service bus subscriber count restricted to some number?
